@@ -1,0 +1,3 @@
+# React Router v6 Routing Issue with Wildcard Paths
+
+This repository demonstrates a subtle bug in React Router v6 related to nested routes and wildcard paths (`/*`).  When navigating from `/` or `/about` to the `/contact` route or a child route of `/contact`, the wildcard `*` doesn't behave as expected causing unexpected routing issues. This issue stems from the interaction between the wildcard route and other route definitions, leading to incorrect route matching or unexpected rendering behavior. The solution implements a strategy for handling wildcard routes in nested scenarios to avoid these issues.
